@@ -1,0 +1,60 @@
+{
+  "format": "custom",
+  "id": "settings",
+  "label": "Settings",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "metadata_title": {
+        "type": "Text",
+        "config": {
+          "label": "Metadata Title",
+          "placeholder": "Metadata of current app"
+        }
+      },
+      "metadata_image_thumbnail": {
+        "type": "Image",
+        "config": {
+          "label": "Metadata Image Thumbnail",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "header_navigation": {
+        "type": "Group",
+        "config": {
+          "label": "Header Navigation",
+          "repeat": true,
+          "fields": {
+            "label": {
+              "type": "Text",
+              "config": {
+                "label": "Label",
+                "placeholder": "Display label"
+              }
+            },
+            "href": {
+              "type": "Link",
+              "config": {
+                "label": "Href",
+                "placeholder": "Link order to navigate",
+                "select": null,
+                "allowTargetBlank": true,
+                "allowText": true,
+                "repeat": false
+              }
+            }
+          }
+        }
+      },
+      "metadata_description": {
+        "type": "Text",
+        "config": {
+          "label": "Metadata Description",
+          "placeholder": ""
+        }
+      }
+    }
+  }
+}
